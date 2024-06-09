@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#+-$h7-r0w*l*bur93ghxkfxe$%3%f3-+k9t0ozev*wahtqg79'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-seanfreaney-djangoblog-gkuk8hh2t9y.ws.codeinstitute-ide.net", ".herokuapp.com"]
 
@@ -85,7 +85,7 @@ DATABASES = {
 }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(str(os.environ.get("DATABASE_URL")))
 }
 
 # Password validation
