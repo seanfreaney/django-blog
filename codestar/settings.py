@@ -77,6 +77,8 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
+DATABASE_URL = "postgres://u2y9qofiv0x:qiQR32gF3c24@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/alive_panda_deaf_211874"
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
