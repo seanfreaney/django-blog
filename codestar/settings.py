@@ -26,7 +26,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#+-$h7-r0w*l*bur93ghxkfxe$%3%f3-+k9t0ozev*wahtqg79'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ["8000-seanfreaney-djangoblog-gkuk8hh2t9y.ws.codeinstitute-ide.net", ".herokuapp.com"]
 
@@ -77,7 +77,6 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
-DATABASE_URL = "postgres://u2y9qofiv0x:qiQR32gF3c24@ep-gentle-mountain-a23bxz6h.eu-central-1.aws.neon.tech/alive_panda_deaf_211874"
 
 DATABASES = {
     'default': {
