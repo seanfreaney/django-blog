@@ -4,9 +4,6 @@ import os
 import sys
 
 
-# Import env.py to set environment variables
-import env
-
 def main():
     """Run administrative tasks."""
     os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'codestar.settings')
