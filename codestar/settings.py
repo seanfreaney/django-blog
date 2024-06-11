@@ -13,16 +13,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 import os
 import dj_database_url
+if os.path.isfile('env.py'):
+    import env
 
-# Ensure the environment variable is set properly
-DATABASE_URL = os.environ.get("DATABASE_URL")
-if DATABASE_URL is None:
-    raise ValueError("No DATABASE_URL environment variable set")
-
-# Update database settings
-DATABASES = {
-    'default': dj_database_url.parse(DATABASE_URL)
-}
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
